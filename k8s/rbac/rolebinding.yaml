@@ -1,0 +1,35 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: web-dev-role-binding
+<<<<<<< HEAD
+  namespace: default
+=======
+  namespace: web-dev
+>>>>>>> 160a23b3c8e31fb45d2b6315c9ae2a158310e248
+subjects:
+- kind: User
+  name: webdev@OTAPRD184ops.onmicrosoft.com
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: web-dev-user
+  apiGroup: rbac.authorization.k8s.io
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: api-dev-role-binding
+<<<<<<< HEAD
+  namespace: default
+=======
+  namespace: api-dev
+>>>>>>> 160a23b3c8e31fb45d2b6315c9ae2a158310e248
+subjects:
+- kind: User
+  name: apidev@OTAPRD184ops.onmicrosoft.com
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: api-dev-user
+  apiGroup: rbac.authorization.k8s.io
